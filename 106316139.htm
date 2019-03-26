@@ -54,37 +54,46 @@ email:
 <button onclick="myFunction2()">loadPatient</button>
 <button onclick="myFunction3()">getPatient</button>
 <script>
+function myFunction1() {
+var x=document.getElementById("name").value;
+  if(x == null || x == ""){
+    alert("姓名必填");
+    document.getElementById("name").value=prompt("姓名", "");
+  }
+}
+</script>
+<script>
 var patient= {"name":"Chalmers","telecom":12345678,
 "gender": "male", "birthDate": "1974-12-25"};
 function myFunction2() {
 alert(patient.name);
-  document.getElementById("name").value="Chalmers";
+document.getElementById("name").value="Chalmers";
 alert(patient.telecom);
-  document.getElementById("phone").value="12345678";
+document.getElementById("phone").value="12345678";
 alert(patient.gender);
-  document.getElementById("gender").value="male";
+document.getElementById("gender").value="male";
 alert(patient.birthDate);
-  document.getElementById("birthbay").value="1974-12-25";
+document.getElementById("birthbay").value="1974-12-25";
 }
 </script>
 <script>
 function myFunction3() {
-  var name=document.getElementById("name").value;
-  alert(name);
-  var gender=document.getElementById("gender").value;
-  alert(gender);
-  var email=document.getElementById("email").value;
-  alert(email);
-  var phone=document.getElementById("phone").value;
-  alert(phone);
-  var birthbay=document.getElementById("birthbay").value;
-  alert(birthbay);
-  var date=document.getElementById("date").value;
-  alert(date);
-  var time=document.getElementById("time").value;
-  alert(time);
-  var detype=document.getElementById("detype").value;
-  alert(detype);
+var name=document.getElementById("name").value;
+alert(name);
+var gender=document.getElementById("gender").value;
+alert(gender);
+var email=document.getElementById("email").value;
+alert(email);
+var phone=document.getElementById("phone").value;
+alert(phone);
+var birthbay=document.getElementById("birthbay").value;
+alert(birthbay);
+var date=document.getElementById("date").value;
+alert(date);
+var time=document.getElementById("time").value;
+alert(time);
+var detype=document.getElementById("detype").value;
+alert(detype);
 }
 </script>
 </form>
