@@ -11,14 +11,14 @@ body {
 <h1 style="color:Green;text-align: center;">皮膚科申請預約</h1>
 
 姓名:
-<input type="text" id="name" name="姓名" value=""><br><br>
+<input type="text" id="name" name="姓名" ><br><br>
 
 性別:
 <input type="radio" id="gender" name="性別" value="male" checked> 男
 <input type="radio" id="gender" name="性別" value="female"> 女<br><br>
 
 email:
-<input type="text" id="email" name="email"  value=""><br><br>
+<input type="text" id="email" name="email"  ><br><br>
 
 電話:
 <input type="text" id="phone" name="電話"  value=""><br><br>
@@ -58,9 +58,13 @@ var patient= {"name":"Chalmers","telecom":12345678,
 "gender": "male", "birthDate": "1974-12-25"};
 function myFunction() {
 alert(patient.name);
+  document.getElementById("name").value="Chalmers";
 alert(patient.telecom);
+  document.getElementById("phone").value="12345678";
 alert(patient.gender);
+  document.getElementById("gender").value="male";
 alert(patient.birthDate);
+  document.getElementById("birthbay").value="1974-12-25";
 }
 </script>
 <script>
