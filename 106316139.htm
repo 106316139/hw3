@@ -50,13 +50,13 @@ email:
 </select><br><br>
 <textarea name="問題與評論">Questions/Comments</textarea><br><br>
 <input type="submit" value="確認送出">
-<button onclick="myFunction()">Try it</button>
-<button onclick="myFunction1()"> getPatient</button>
-<button onclick="myFunction2()"> 檢查資料</button>
+<button onclick="myFunction1()"> 檢查資料</button>
+<button onclick="myFunction2()">loadPatient</button>
+<button onclick="myFunction3()">getPatient</button>
 <script>
 var patient= {"name":"Chalmers","telecom":12345678,
 "gender": "male", "birthDate": "1974-12-25"};
-function myFunction() {
+function myFunction2() {
 alert(patient.name);
   document.getElementById("name").value="Chalmers";
 alert(patient.telecom);
@@ -68,9 +68,23 @@ alert(patient.birthDate);
 }
 </script>
 <script>
-function myFunction1() {
-  var x=document.getElementById("name").value;
-  alert(x);
+function myFunction3() {
+  var name=document.getElementById("name").value;
+  alert(name);
+  var gender=document.getElementById("gender").value;
+  alert(gender);
+  var email=document.getElementById("email").value;
+  alert(email);
+  var phone=document.getElementById("phone").value;
+  alert(phone);
+  var birthbay=document.getElementById("birthbay").value;
+  alert(birthbay);
+  var date=document.getElementById("date").value;
+  alert(date);
+  var time=document.getElementById("time").value;
+  alert(time);
+  var detype=document.getElementById("detype").value;
+  alert(detype);
 }
 </script>
 </form>
