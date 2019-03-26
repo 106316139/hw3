@@ -61,7 +61,7 @@ var x=document.getElementById("name").value;
     document.getElementById("name").value=prompt("姓名", "");
   }
 var y=document.getElementById("phone").value;
-  if(y == NaN || y == ""){
+  if(isNaN(y)){
     alert("電話須為數字");
     document.getElementById("name").value=prompt("電話", "");
   }
